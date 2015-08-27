@@ -88,9 +88,23 @@ NSString *MailHeaderSwizzledMethodPrefix = @"MH";
         [nsPref jrlp_swizzleMethod:@selector(showPreferencesPanel)
                         withMethod:@selector(MHShowPreferencesPanel) error:&error];
         
-        [nsPref jrlp_swizzleMethod:@selector(confirmCloseSheetIsDone)
-                        withMethod:@selector(MHConfirmCloseSheetIsDone) error:&error];
+        [nsPref jrlp_swizzleMethod:@selector(confirmCloseSheetIsDone:returnCode:contextInfo:)
+                        withMethod:@selector(MHConfirmCloseSheetIsDone:returnCode:contextInfo:) error:&error];
         
+    }
+    
+    Class accountCell = NSClassFromString(@"AccountCell");
+    if (accountCell) {
+        [accountCell jrlp_addMethodsFromClass:NSClassFromString(@"SPAccountCell") error:&error];
+
+        [accountCell jrlp_swizzleMethod:@selector(drawInteriorWithFrame:inView:) withMethod:@selector(SPdrawInteriorWithFrame:inView:) error:&error];
+        [accountCell jrlp_swizzleMethod:@selector(drawWithFrame:inView:) withMethod:@selector(SPdrawWithFrame:inView:) error:&error];
+        [accountCell jrlp_swizzleMethod:@selector(title) withMethod:@selector(SPtitle) error:&error];
+//        [accountCell jrlp_swizzleMethod:@selector(setAccount:) withMethod:@selector(SPsetAccount) error:&error];
+        [accountCell jrlp_swizzleMethod:@selector(copyWithZone:) withMethod:@selector(SPcopyWithZone:) error:&error];
+        [accountCell jrlp_swizzleMethod:@selector(_accountCellCommonInit) withMethod:@selector(SP_accountCellCommonInit) error:&error];
+        [accountCell jrlp_swizzleMethod:@selector(initWithCoder:) withMethod:@selector(SPinitWithCoder:) error:&error];
+        [accountCell jrlp_swizzleMethod:@selector(initTextCell:) withMethod:@selector(SPinitTextCell:) error:&error];
     }
 }
 

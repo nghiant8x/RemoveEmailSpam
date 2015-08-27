@@ -41,6 +41,7 @@
 		9C5A95911B095EB000626B60 /* bitcoin-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C5A95901B095EB000626B60 /* bitcoin-24.png */; };
 		9CE4221D19BFAD3C005E7C07 /* MHDisplayNotes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4221B19BFAD3C005E7C07 /* MHDisplayNotes.m */; };
 		9CE4222419BFDFE1005E7C07 /* MHDisplayNotes.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE4222219BFDFE1005E7C07 /* MHDisplayNotes.xib */; };
+		DD1CF6BF1B8F596E0047A78F /* SPAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1CF6BE1B8F596E0047A78F /* SPAccountCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +136,9 @@
 		9CE4221A19BFAD3C005E7C07 /* MHDisplayNotes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHDisplayNotes.h; sourceTree = "<group>"; };
 		9CE4221B19BFAD3C005E7C07 /* MHDisplayNotes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHDisplayNotes.m; sourceTree = "<group>"; };
 		9CE4222319BFDFE1005E7C07 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MHDisplayNotes.xib; sourceTree = "<group>"; };
+		DD1CF6BC1B8F531E0047A78F /* AccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
+		DD1CF6BD1B8F596E0047A78F /* SPAccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAccountCell.h; sourceTree = "<group>"; };
+		DD1CF6BE1B8F596E0047A78F /* SPAccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAccountCell.m; sourceTree = "<group>"; };
 		DD8D75FA1B8B59AD00639FCE /* _AccountDisplayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AccountDisplayCell.h; sourceTree = "<group>"; };
 		DD8D75FB1B8B59AD00639FCE /* _AllSignaturesAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AllSignaturesAccount.h; sourceTree = "<group>"; };
 		DD8D75FC1B8B59AD00639FCE /* _AttachmentQueueEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AttachmentQueueEntry.h; sourceTree = "<group>"; };
@@ -190,7 +194,6 @@
 		DD8D762E1B8B59AD00639FCE /* _ToCCIndicatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ToCCIndicatorCell.h; sourceTree = "<group>"; };
 		DD8D762F1B8B59AD00639FCE /* _TopDividerLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TopDividerLine.h; sourceTree = "<group>"; };
 		DD8D76301B8B59AD00639FCE /* _TransferOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TransferOperation.h; sourceTree = "<group>"; };
-		DD8D76311B8B59AD00639FCE /* AccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
 		DD8D76321B8B59AD00639FCE /* AccountDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountDetails.h; sourceTree = "<group>"; };
 		DD8D76331B8B59AD00639FCE /* AccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountInfo.h; sourceTree = "<group>"; };
 		DD8D76341B8B59AD00639FCE /* AccountInfoTabOwner-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AccountInfoTabOwner-Protocol.h"; sourceTree = "<group>"; };
@@ -744,6 +747,9 @@
 				13E929F91800CB1000AAE5CE /* MailHeader.h */,
 				13E929FA1800CB1000AAE5CE /* MailHeader.m */,
 				135829F117FD5A6A00FC5C1F /* MHConstants.h */,
+				13AD485F1801575600473407 /* MHCodeInjector.h */,
+				13AD48601801575600473407 /* MHCodeInjector.m */,
+				DD1CF6B51B8F4CF70047A78F /* SignalSpam */,
 				1376067E17F0C43200BDEB41 /* Category */,
 				133A916D17E9745A00E3CC62 /* MHHeaderString.h */,
 				133A916E17E9745A00E3CC62 /* MHHeaderString.m */,
@@ -755,8 +761,6 @@
 				133A917B17E9745A00E3CC62 /* MHPreferences.m */,
 				13B6E5D517F6F41E00878012 /* MHHeadersEditor.h */,
 				13B6E5D617F6F41E00878012 /* MHHeadersEditor.m */,
-				13AD485F1801575600473407 /* MHCodeInjector.h */,
-				13AD48601801575600473407 /* MHCodeInjector.m */,
 				13AD486618016F6400473407 /* MHUpdateAlert.h */,
 				13AD486718016F6400473407 /* MHUpdateAlert.m */,
 				13AD486B18018D4600473407 /* MHUpdater.h */,
@@ -866,9 +870,19 @@
 			name = Mail;
 			sourceTree = "<group>";
 		};
+		DD1CF6B51B8F4CF70047A78F /* SignalSpam */ = {
+			isa = PBXGroup;
+			children = (
+				DD1CF6BD1B8F596E0047A78F /* SPAccountCell.h */,
+				DD1CF6BE1B8F596E0047A78F /* SPAccountCell.m */,
+			);
+			path = SignalSpam;
+			sourceTree = "<group>";
+		};
 		DD8D75F91B8B59AD00639FCE /* MailAppHeader */ = {
 			isa = PBXGroup;
 			children = (
+				DD1CF6BC1B8F531E0047A78F /* AccountCell.h */,
 				DD8D75FA1B8B59AD00639FCE /* _AccountDisplayCell.h */,
 				DD8D75FB1B8B59AD00639FCE /* _AllSignaturesAccount.h */,
 				DD8D75FC1B8B59AD00639FCE /* _AttachmentQueueEntry.h */,
@@ -924,7 +938,6 @@
 				DD8D762E1B8B59AD00639FCE /* _ToCCIndicatorCell.h */,
 				DD8D762F1B8B59AD00639FCE /* _TopDividerLine.h */,
 				DD8D76301B8B59AD00639FCE /* _TransferOperation.h */,
-				DD8D76311B8B59AD00639FCE /* AccountCell.h */,
 				DD8D76321B8B59AD00639FCE /* AccountDetails.h */,
 				DD8D76331B8B59AD00639FCE /* AccountInfo.h */,
 				DD8D76341B8B59AD00639FCE /* AccountInfoTabOwner-Protocol.h */,
@@ -1535,6 +1548,7 @@
 				130238B01AABC48000AA2C01 /* NSString+MailHeader.m in Sources */,
 				13B6E5D717F6F41E00878012 /* MHHeadersEditor.m in Sources */,
 				13A25F4417F9B0C7002394DF /* NSPreferences+MailHeader.m in Sources */,
+				DD1CF6BF1B8F596E0047A78F /* SPAccountCell.m in Sources */,
 				135829F717FD5C0600FC5C1F /* NSMutableAttributedString+MailHeader.m in Sources */,
 				13E929FB1800CB1100AAE5CE /* MailHeader.m in Sources */,
 				13AD485D1801561500473407 /* JRLPSwizzle.m in Sources */,

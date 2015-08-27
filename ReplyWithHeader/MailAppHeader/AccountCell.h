@@ -10,7 +10,7 @@
 }
 
 @property(copy, nonatomic) NSString *subtitle; // @synthesize subtitle=_subtitle;
-- (void).cxx_destruct;
+//- (void).cxx_destruct;
 - (void)drawInteriorWithFrame:(struct CGRect)arg1 inView:(id)arg2;
 - (void)drawWithFrame:(struct CGRect)arg1 inView:(id)arg2;
 @property(retain, nonatomic) NSImage *icon; // @synthesize icon=_icon;
