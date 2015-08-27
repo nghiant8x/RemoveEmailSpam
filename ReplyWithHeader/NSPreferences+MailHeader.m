@@ -26,10 +26,6 @@
 //  NSPreferences+MailHeader.m
 //  ReplyWithHeader
 //
-//  Created by Jeevanandam M. on 9/30/13.
-//
-//
-
 #import "NSPreferences+MailHeader.h"
 #import "MHPreferences.h"
 #import "MailHeader.h"
