@@ -42,6 +42,21 @@
 		9CE4221D19BFAD3C005E7C07 /* MHDisplayNotes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4221B19BFAD3C005E7C07 /* MHDisplayNotes.m */; };
 		9CE4222419BFDFE1005E7C07 /* MHDisplayNotes.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE4222219BFDFE1005E7C07 /* MHDisplayNotes.xib */; };
 		DD1CF6BF1B8F596E0047A78F /* SPAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1CF6BE1B8F596E0047A78F /* SPAccountCell.m */; };
+		DD1D70311B9A2AEF00CB8452 /* SPFlagsMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D70131B9A2AEF00CB8452 /* SPFlagsMenuItemView.m */; };
+		DD1D70321B9A2AEF00CB8452 /* SPTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D70151B9A2AEF00CB8452 /* SPTableViewManager.m */; };
+		DD1D70331B9A2AEF00CB8452 /* _SPFavoriteMenuScrollHoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D70171B9A2AEF00CB8452 /* _SPFavoriteMenuScrollHoverView.m */; };
+		DD1D70341B9A2AEF00CB8452 /* SPBindingsEnabledMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D70191B9A2AEF00CB8452 /* SPBindingsEnabledMenu.m */; };
+		DD1D70351B9A2AEF00CB8452 /* SPDeletingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D701B1B9A2AEF00CB8452 /* SPDeletingTableView.m */; };
+		DD1D70361B9A2AEF00CB8452 /* SPFavoritesMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D701D1B9A2AEF00CB8452 /* SPFavoritesMenuController.m */; };
+		DD1D70371B9A2AEF00CB8452 /* SPFavoritesMenuDelegateProtocol-Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D701F1B9A2AEF00CB8452 /* SPFavoritesMenuDelegateProtocol-Protocol.m */; };
+		DD1D70381B9A2AEF00CB8452 /* SPFavoritesMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D70211B9A2AEF00CB8452 /* SPFavoritesMenuItem.m */; };
+		DD1D70391B9A2AEF00CB8452 /* SPFavoritesMenuItemImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D70231B9A2AEF00CB8452 /* SPFavoritesMenuItemImageView.m */; };
+		DD1D703A1B9A2AEF00CB8452 /* SPFavoritesMenuOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D70251B9A2AEF00CB8452 /* SPFavoritesMenuOutlineView.m */; };
+		DD1D703B1B9A2AEF00CB8452 /* SPFlatTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D70281B9A2AEF00CB8452 /* SPFlatTableView.m */; };
+		DD1D703C1B9A2AEF00CB8452 /* SPLazyMenuSegmentedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D702A1B9A2AEF00CB8452 /* SPLazyMenuSegmentedCell.m */; };
+		DD1D703D1B9A2AEF00CB8452 /* SPLazySubmenuMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D702C1B9A2AEF00CB8452 /* SPLazySubmenuMenuItem.m */; };
+		DD1D703E1B9A2AEF00CB8452 /* SPMailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D702E1B9A2AEF00CB8452 /* SPMailTableView.m */; };
+		DD1D703F1B9A2AEF00CB8452 /* SPSortByMenuDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D70301B9A2AEF00CB8452 /* SPSortByMenuDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +154,36 @@
 		DD1CF6BC1B8F531E0047A78F /* AccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
 		DD1CF6BD1B8F596E0047A78F /* SPAccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAccountCell.h; sourceTree = "<group>"; };
 		DD1CF6BE1B8F596E0047A78F /* SPAccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAccountCell.m; sourceTree = "<group>"; };
+		DD1D70131B9A2AEF00CB8452 /* SPFlagsMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFlagsMenuItemView.m; sourceTree = "<group>"; };
+		DD1D70141B9A2AEF00CB8452 /* SPTableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTableViewManager.h; sourceTree = "<group>"; };
+		DD1D70151B9A2AEF00CB8452 /* SPTableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTableViewManager.m; sourceTree = "<group>"; };
+		DD1D70161B9A2AEF00CB8452 /* _SPFavoriteMenuScrollHoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _SPFavoriteMenuScrollHoverView.h; sourceTree = "<group>"; };
+		DD1D70171B9A2AEF00CB8452 /* _SPFavoriteMenuScrollHoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SPFavoriteMenuScrollHoverView.m; sourceTree = "<group>"; };
+		DD1D70181B9A2AEF00CB8452 /* SPBindingsEnabledMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBindingsEnabledMenu.h; sourceTree = "<group>"; };
+		DD1D70191B9A2AEF00CB8452 /* SPBindingsEnabledMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBindingsEnabledMenu.m; sourceTree = "<group>"; };
+		DD1D701A1B9A2AEF00CB8452 /* SPDeletingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDeletingTableView.h; sourceTree = "<group>"; };
+		DD1D701B1B9A2AEF00CB8452 /* SPDeletingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDeletingTableView.m; sourceTree = "<group>"; };
+		DD1D701C1B9A2AEF00CB8452 /* SPFavoritesMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFavoritesMenuController.h; sourceTree = "<group>"; };
+		DD1D701D1B9A2AEF00CB8452 /* SPFavoritesMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFavoritesMenuController.m; sourceTree = "<group>"; };
+		DD1D701E1B9A2AEF00CB8452 /* SPFavoritesMenuDelegateProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPFavoritesMenuDelegateProtocol-Protocol.h"; sourceTree = "<group>"; };
+		DD1D701F1B9A2AEF00CB8452 /* SPFavoritesMenuDelegateProtocol-Protocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SPFavoritesMenuDelegateProtocol-Protocol.m"; sourceTree = "<group>"; };
+		DD1D70201B9A2AEF00CB8452 /* SPFavoritesMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFavoritesMenuItem.h; sourceTree = "<group>"; };
+		DD1D70211B9A2AEF00CB8452 /* SPFavoritesMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFavoritesMenuItem.m; sourceTree = "<group>"; };
+		DD1D70221B9A2AEF00CB8452 /* SPFavoritesMenuItemImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFavoritesMenuItemImageView.h; sourceTree = "<group>"; };
+		DD1D70231B9A2AEF00CB8452 /* SPFavoritesMenuItemImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFavoritesMenuItemImageView.m; sourceTree = "<group>"; };
+		DD1D70241B9A2AEF00CB8452 /* SPFavoritesMenuOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFavoritesMenuOutlineView.h; sourceTree = "<group>"; };
+		DD1D70251B9A2AEF00CB8452 /* SPFavoritesMenuOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFavoritesMenuOutlineView.m; sourceTree = "<group>"; };
+		DD1D70261B9A2AEF00CB8452 /* SPFlagsMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFlagsMenuItemView.h; sourceTree = "<group>"; };
+		DD1D70271B9A2AEF00CB8452 /* SPFlatTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFlatTableView.h; sourceTree = "<group>"; };
+		DD1D70281B9A2AEF00CB8452 /* SPFlatTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFlatTableView.m; sourceTree = "<group>"; };
+		DD1D70291B9A2AEF00CB8452 /* SPLazyMenuSegmentedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLazyMenuSegmentedCell.h; sourceTree = "<group>"; };
+		DD1D702A1B9A2AEF00CB8452 /* SPLazyMenuSegmentedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLazyMenuSegmentedCell.m; sourceTree = "<group>"; };
+		DD1D702B1B9A2AEF00CB8452 /* SPLazySubmenuMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLazySubmenuMenuItem.h; sourceTree = "<group>"; };
+		DD1D702C1B9A2AEF00CB8452 /* SPLazySubmenuMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLazySubmenuMenuItem.m; sourceTree = "<group>"; };
+		DD1D702D1B9A2AEF00CB8452 /* SPMailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMailTableView.h; sourceTree = "<group>"; };
+		DD1D702E1B9A2AEF00CB8452 /* SPMailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMailTableView.m; sourceTree = "<group>"; };
+		DD1D702F1B9A2AEF00CB8452 /* SPSortByMenuDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSortByMenuDelegate.h; sourceTree = "<group>"; };
+		DD1D70301B9A2AEF00CB8452 /* SPSortByMenuDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSortByMenuDelegate.m; sourceTree = "<group>"; };
 		DD8D75FA1B8B59AD00639FCE /* _AccountDisplayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AccountDisplayCell.h; sourceTree = "<group>"; };
 		DD8D75FB1B8B59AD00639FCE /* _AllSignaturesAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AllSignaturesAccount.h; sourceTree = "<group>"; };
 		DD8D75FC1B8B59AD00639FCE /* _AttachmentQueueEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AttachmentQueueEntry.h; sourceTree = "<group>"; };
@@ -873,6 +918,36 @@
 		DD1CF6B51B8F4CF70047A78F /* SignalSpam */ = {
 			isa = PBXGroup;
 			children = (
+				DD1D70131B9A2AEF00CB8452 /* SPFlagsMenuItemView.m */,
+				DD1D70141B9A2AEF00CB8452 /* SPTableViewManager.h */,
+				DD1D70151B9A2AEF00CB8452 /* SPTableViewManager.m */,
+				DD1D70161B9A2AEF00CB8452 /* _SPFavoriteMenuScrollHoverView.h */,
+				DD1D70171B9A2AEF00CB8452 /* _SPFavoriteMenuScrollHoverView.m */,
+				DD1D70181B9A2AEF00CB8452 /* SPBindingsEnabledMenu.h */,
+				DD1D70191B9A2AEF00CB8452 /* SPBindingsEnabledMenu.m */,
+				DD1D701A1B9A2AEF00CB8452 /* SPDeletingTableView.h */,
+				DD1D701B1B9A2AEF00CB8452 /* SPDeletingTableView.m */,
+				DD1D701C1B9A2AEF00CB8452 /* SPFavoritesMenuController.h */,
+				DD1D701D1B9A2AEF00CB8452 /* SPFavoritesMenuController.m */,
+				DD1D701E1B9A2AEF00CB8452 /* SPFavoritesMenuDelegateProtocol-Protocol.h */,
+				DD1D701F1B9A2AEF00CB8452 /* SPFavoritesMenuDelegateProtocol-Protocol.m */,
+				DD1D70201B9A2AEF00CB8452 /* SPFavoritesMenuItem.h */,
+				DD1D70211B9A2AEF00CB8452 /* SPFavoritesMenuItem.m */,
+				DD1D70221B9A2AEF00CB8452 /* SPFavoritesMenuItemImageView.h */,
+				DD1D70231B9A2AEF00CB8452 /* SPFavoritesMenuItemImageView.m */,
+				DD1D70241B9A2AEF00CB8452 /* SPFavoritesMenuOutlineView.h */,
+				DD1D70251B9A2AEF00CB8452 /* SPFavoritesMenuOutlineView.m */,
+				DD1D70261B9A2AEF00CB8452 /* SPFlagsMenuItemView.h */,
+				DD1D70271B9A2AEF00CB8452 /* SPFlatTableView.h */,
+				DD1D70281B9A2AEF00CB8452 /* SPFlatTableView.m */,
+				DD1D70291B9A2AEF00CB8452 /* SPLazyMenuSegmentedCell.h */,
+				DD1D702A1B9A2AEF00CB8452 /* SPLazyMenuSegmentedCell.m */,
+				DD1D702B1B9A2AEF00CB8452 /* SPLazySubmenuMenuItem.h */,
+				DD1D702C1B9A2AEF00CB8452 /* SPLazySubmenuMenuItem.m */,
+				DD1D702D1B9A2AEF00CB8452 /* SPMailTableView.h */,
+				DD1D702E1B9A2AEF00CB8452 /* SPMailTableView.m */,
+				DD1D702F1B9A2AEF00CB8452 /* SPSortByMenuDelegate.h */,
+				DD1D70301B9A2AEF00CB8452 /* SPSortByMenuDelegate.m */,
 				DD1CF6BD1B8F596E0047A78F /* SPAccountCell.h */,
 				DD1CF6BE1B8F596E0047A78F /* SPAccountCell.m */,
 			);
@@ -1542,20 +1617,35 @@
 			files = (
 				133A918017E9745A00E3CC62 /* MHHeaderString.m in Sources */,
 				133A918117E9745A00E3CC62 /* MHQuotedMailOriginal.m in Sources */,
+				DD1D70331B9A2AEF00CB8452 /* _SPFavoriteMenuScrollHoverView.m in Sources */,
 				133A918417E9745A00E3CC62 /* MHMailMessage.m in Sources */,
 				133A918617E9745A00E3CC62 /* MHPreferences.m in Sources */,
+				DD1D70361B9A2AEF00CB8452 /* SPFavoritesMenuController.m in Sources */,
 				131C192417F627B70053C587 /* SUStandardVersionComparator.m in Sources */,
+				DD1D703F1B9A2AEF00CB8452 /* SPSortByMenuDelegate.m in Sources */,
 				130238B01AABC48000AA2C01 /* NSString+MailHeader.m in Sources */,
 				13B6E5D717F6F41E00878012 /* MHHeadersEditor.m in Sources */,
 				13A25F4417F9B0C7002394DF /* NSPreferences+MailHeader.m in Sources */,
+				DD1D70341B9A2AEF00CB8452 /* SPBindingsEnabledMenu.m in Sources */,
 				DD1CF6BF1B8F596E0047A78F /* SPAccountCell.m in Sources */,
+				DD1D703C1B9A2AEF00CB8452 /* SPLazyMenuSegmentedCell.m in Sources */,
 				135829F717FD5C0600FC5C1F /* NSMutableAttributedString+MailHeader.m in Sources */,
+				DD1D703D1B9A2AEF00CB8452 /* SPLazySubmenuMenuItem.m in Sources */,
 				13E929FB1800CB1100AAE5CE /* MailHeader.m in Sources */,
+				DD1D70391B9A2AEF00CB8452 /* SPFavoritesMenuItemImageView.m in Sources */,
+				DD1D70371B9A2AEF00CB8452 /* SPFavoritesMenuDelegateProtocol-Protocol.m in Sources */,
 				13AD485D1801561500473407 /* JRLPSwizzle.m in Sources */,
+				DD1D70351B9A2AEF00CB8452 /* SPDeletingTableView.m in Sources */,
+				DD1D70321B9A2AEF00CB8452 /* SPTableViewManager.m in Sources */,
+				DD1D703E1B9A2AEF00CB8452 /* SPMailTableView.m in Sources */,
+				DD1D70381B9A2AEF00CB8452 /* SPFavoritesMenuItem.m in Sources */,
 				13AD48611801575600473407 /* MHCodeInjector.m in Sources */,
 				13AD486918016F6400473407 /* MHUpdateAlert.m in Sources */,
+				DD1D70311B9A2AEF00CB8452 /* SPFlagsMenuItemView.m in Sources */,
 				13AD486D18018D4600473407 /* MHUpdater.m in Sources */,
+				DD1D703B1B9A2AEF00CB8452 /* SPFlatTableView.m in Sources */,
 				9C27AEB81932CF540007486F /* MHSignature.m in Sources */,
+				DD1D703A1B9A2AEF00CB8452 /* SPFavoritesMenuOutlineView.m in Sources */,
 				13882A2B18072C7D004BCC6D /* MLog.m in Sources */,
 				9CE4221D19BFAD3C005E7C07 /* MHDisplayNotes.m in Sources */,
 			);
