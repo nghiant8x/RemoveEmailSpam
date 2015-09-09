@@ -6,9 +6,12 @@
 
 #import <Foundation/Foundation.h>
 
-#define MLogString(s,...) \
-	[MLog logFile:__FILE__ lineNumber:__LINE__ \
-		format:(s),##__VA_ARGS__]
+//#define MLogString(s,...) \
+//	[MLog logFile:__FILE__ lineNumber:__LINE__ \
+//		format:(s),##__VA_ARGS__]
+
+//#define MLogString(fmt,...) NSLog(@"%s",__PRETTY_FUNCTION__)
+#define MLogString(fmt,...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 
 @interface MLog : NSObject {
 	

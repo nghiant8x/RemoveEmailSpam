@@ -233,7 +233,7 @@
 }
 
 - (BOOL)SPRespondsToSelector:(SEL)arg1{
-    MLogString(@"");
+//    MLogString(@"");
     BOOL result = [self SPRespondsToSelector:arg1];
     return result;
 }
@@ -267,6 +267,7 @@
 }
 
 - (id)SPMenuForEvent:(id)arg1{
+    //Tommy Right Click
     MLogString(@"");
     id result = [self SPMenuForEvent:arg1];
     return result;

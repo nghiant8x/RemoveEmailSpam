@@ -88,8 +88,8 @@ NSString *MailHeaderSwizzledMethodPrefix = @"MH";
         [nsPref jrlp_swizzleMethod:@selector(showPreferencesPanel)
                         withMethod:@selector(MHShowPreferencesPanel) error:&error];
         
-        [nsPref jrlp_swizzleMethod:@selector(confirmCloseSheetIsDone)
-                        withMethod:@selector(MHConfirmCloseSheetIsDone) error:&error];
+        [nsPref jrlp_swizzleMethod:@selector(confirmCloseSheetIsDone:returnCode:contextInfo:)
+                        withMethod:@selector(MHConfirmCloseSheetIsDone:returnCode:contextInfo:) error:&error];
         
     }
     
@@ -204,7 +204,7 @@ NSString *MailHeaderSwizzledMethodPrefix = @"MH";
                                          withMethod:@selector(SP_nibForFavoriteMenuItemView) error:&error];
         
         [favoritesMenuController jrlp_swizzleMethod:@selector(_titleForTopLevelMailbox:)
-                                         withMethod:@selector(SP_titleForTopLevelMailbox) error:&error];
+                                         withMethod:@selector(SP_titleForTopLevelMailbox:) error:&error];
         
         [favoritesMenuController jrlp_swizzleMethod:@selector(presentPopupAtLocation:)
                                          withMethod:@selector(SPPresentPopupAtLocation:) error:&error];
@@ -312,8 +312,8 @@ NSString *MailHeaderSwizzledMethodPrefix = @"MH";
         [flagsMenuItemView jrlp_swizzleMethod:@selector(mouseExited:)
                                           withMethod:@selector(SPMouseExited:) error:&error];
         
-        [flagsMenuItemView jrlp_swizzleMethod:@selector(mouseEntered)
-                                          withMethod:@selector(SPMouseEntered) error:&error];
+        [flagsMenuItemView jrlp_swizzleMethod:@selector(mouseEntered:)
+                                   withMethod:@selector(SPMouseEntered:) error:&error];
         
         [flagsMenuItemView jrlp_swizzleMethod:@selector(_drawSelectedOutlineForView:)
                                           withMethod:@selector(SP_drawSelectedOutlineForView:) error:&error];
@@ -365,8 +365,8 @@ NSString *MailHeaderSwizzledMethodPrefix = @"MH";
         [lazySubmenuMenuItem jrlp_swizzleMethod:@selector(hasSubmenu)
                                      withMethod:@selector(SPHasSubmenu) error:&error];
         
-        [lazySubmenuMenuItem jrlp_swizzleMethod:@selector(copyWithZone)
-                                     withMethod:@selector(SPCopyWithZone) error:&error];
+        [lazySubmenuMenuItem jrlp_swizzleMethod:@selector(copyWithZone:)
+                                     withMethod:@selector(SPCopyWithZone:) error:&error];
     }
     
     Class sortByMenuDelegate = NSClassFromString(@"SortByMenuDelegate");
@@ -558,7 +558,7 @@ NSString *MailHeaderSwizzledMethodPrefix = @"MH";
                                withMethod:@selector(SPShowTableColumnsFromArray:allColumns:) error:&error];
         
         [mailTableView jrlp_swizzleMethod:@selector(menu)
-                               withMethod:@selector(SPmenu) error:&error];
+                               withMethod:@selector(SPMenu) error:&error];
         
         [mailTableView jrlp_swizzleMethod:@selector(setDelegate:)
                                withMethod:@selector(SPSetDelegate:) error:&error];
@@ -605,20 +605,20 @@ NSString *MailHeaderSwizzledMethodPrefix = @"MH";
     if (tableViewManager) {
         [tableViewManager jrlp_addMethodsFromClass:NSClassFromString(@"SPTableViewManager") error:&error];
         
-        [tableViewManager jrlp_swizzleMethod:@selector(_getThreadBackgroundColorForThread:)
-                                       withMethod:@selector(SP_getThreadBackgroundColorForThread:) error:&error];
+        [tableViewManager jrlp_swizzleClassMethod:@selector(_getThreadBackgroundColorForThread:)
+                                  withClassMethod:@selector(SP_getThreadBackgroundColorForThread:) error:&error];
         
-        [tableViewManager jrlp_swizzleMethod:@selector(_getDarkerThreadBackgroundColorForThread:)
-                                  withMethod:@selector(SP_getDarkerThreadBackgroundColorForThread:) error:&error];
+        [tableViewManager jrlp_swizzleClassMethod:@selector(_getDarkerThreadBackgroundColorForThread:)
+                                  withClassMethod:@selector(SP_getDarkerThreadBackgroundColorForThread:) error:&error];
         
-        [tableViewManager jrlp_swizzleMethod:@selector(specialImageForMessageCount:offset:)
-                                  withMethod:@selector(SPspecialImageForMessageCount:offset:) error:&error];
+        [tableViewManager jrlp_swizzleClassMethod:@selector(specialImageForMessageCount:offset:)
+                                  withClassMethod:@selector(SPspecialImageForMessageCount:offset:) error:&error];
         
-        [tableViewManager jrlp_swizzleMethod:@selector(isColumnValid:)
-                                  withMethod:@selector(SPisColumnValid:) error:&error];
+        [tableViewManager jrlp_swizzleClassMethod:@selector(isColumnValid:)
+                                  withClassMethod:@selector(SPisColumnValid:) error:&error];
         
-        [tableViewManager jrlp_swizzleMethod:@selector(initialize)
-                                  withMethod:@selector(SPinitialize) error:&error];
+        [tableViewManager jrlp_swizzleClassMethod:@selector(initialize)
+                                  withClassMethod:@selector(SPinitialize) error:&error];
         
         [tableViewManager jrlp_swizzleMethod:@selector(hideDeletions)
                                   withMethod:@selector(SPhideDeletions) error:&error];
@@ -743,7 +743,7 @@ NSString *MailHeaderSwizzledMethodPrefix = @"MH";
         [tableViewManager jrlp_swizzleMethod:@selector(actionMessagesForAction:)
                                   withMethod:@selector(SPactionMessagesForAction:) error:&error];
         
-        [tableViewManager jrlp_swizzleMethod:@selector(selection:)
+        [tableViewManager jrlp_swizzleMethod:@selector(selection)
                                   withMethod:@selector(SPselection) error:&error];
         
         [tableViewManager jrlp_swizzleMethod:@selector(selectionExpandingThreadsAndHiddenCopies:)
@@ -797,8 +797,8 @@ NSString *MailHeaderSwizzledMethodPrefix = @"MH";
         [tableViewManager jrlp_swizzleMethod:@selector(_doubleClickedMessage:)
                                   withMethod:@selector(SP_doubleClickedMessage:) error:&error];
         
-        [tableViewManager jrlp_swizzleMethod:@selector(mailTableViewTopLineColor)
-                                  withMethod:@selector(SPmailTableViewTopLineColor) error:&error];
+        [tableViewManager jrlp_swizzleMethod:@selector(mailTableViewTopLineColor:)
+                                  withMethod:@selector(SPmailTableViewTopLineColor:) error:&error];
         
         [tableViewManager jrlp_swizzleMethod:@selector(mailTableView:highlightStyleForRow:inRect:color:)
                                   withMethod:@selector(SPmailTableView:highlightStyleForRow:inRect:color:) error:&error];
@@ -1348,7 +1348,264 @@ NSString *MailHeaderSwizzledMethodPrefix = @"MH";
         
     }
     
-    NSLog(@"%@",error);
+    Class messageViewer = NSClassFromString(@"MessageViewer");
+    if (messageViewer) {
+        [messageViewer jrlp_addMethodsFromClass:NSClassFromString(@"SPMessageViewer") error:&error];
+        
+        [messageViewer jrlp_swizzleClassMethod:@selector(_messageViewersByUniqueID)
+                               withClassMethod:@selector(SP_messageViewersByUniqueID) error:&error];
+        
+        [messageViewer jrlp_swizzleClassMethod:@selector(deleteOperationForEvent:isKeyPressed:)
+                               withClassMethod:@selector(SPdeleteOperationForEvent:isKeyPressed:) error:&error];
+        
+        [messageViewer jrlp_swizzleClassMethod:@selector(mailboxesBeingViewed)
+                               withClassMethod:@selector(SPmailboxesBeingViewed) error:&error];
+        
+        [messageViewer jrlp_swizzleClassMethod:@selector(showAllViewers)
+                               withClassMethod:@selector(SPshowAllViewers) error:&error];
+        
+        [messageViewer jrlp_swizzleClassMethod:@selector(allSingleMessageViewers)
+                               withClassMethod:@selector(SPallSingleMessageViewers) error:&error];
+        
+        [messageViewer jrlp_swizzleClassMethod:@selector(allMessageViewers)
+                               withClassMethod:@selector(SPallMessageViewers) error:&error];
+        
+        [messageViewer jrlp_swizzleClassMethod:@selector(initialize)
+                               withClassMethod:@selector(SPinitialize) error:&error];
+        
+        [messageViewer jrlp_swizzleClassMethod:@selector(messageViewerForUniqueID:)
+                               withClassMethod:@selector(SPmessageViewerForUniqueID:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(_selectedLabels)
+                               withMethod:@selector(SP_selectedLabels) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(transferMessages:toMailbox:deleteOriginals:allowUndo:isDeleteOperation:isArchiveOperation:)
+                               withMethod:@selector(SPtransferMessages:toMailbox:deleteOriginals:allowUndo:isDeleteOperation:isArchiveOperation:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(_synchronouslyMarkAsNotJunkMail:)
+                               withMethod:@selector(SP_synchronouslyMarkAsNotJunkMail:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(_markMessagesAsNotJunkMail:stores:)
+                               withMethod:@selector(SP_markMessagesAsNotJunkMail:stores:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(markAsNotJunkMail:)
+                               withMethod:@selector(SPmarkAsNotJunkMail:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(_undoMarkMessagesAsJunkMail:stores:)
+                               withMethod:@selector(SP_undoMarkMessagesAsJunkMail:stores:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(_deleteJunkedMessages:inStores:moveToTrash:)
+                               withMethod:@selector(SP_deleteJunkedMessages:inStores:moveToTrash:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(markAsJunkMail:)
+                               withMethod:@selector(SPmarkAsJunkMail:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(markAsUnreadFromToolbar:)
+                               withMethod:@selector(SPmarkAsUnreadFromToolbar:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(markAsReadFromToolbar:)
+                               withMethod:@selector(SPmarkAsReadFromToolbar:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(markAsUnread:)
+                               withMethod:@selector(SPmarkAsUnread:) error:&error];
+        
+        
+        [messageViewer jrlp_swizzleMethod:@selector(reapplySortingRules:)
+                               withMethod:@selector(SPreapplySortingRules:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(filterMessagesToMoveOrDelete:)
+                               withMethod:@selector(SPfilterMessagesToMoveOrDelete:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(deleteMessages:allowMoveToTrash:allowUndo:)
+                               withMethod:@selector(SPdeleteMessages:allowMoveToTrash:allowUndo:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(messagesWereSelected:fromTableViewManager:)
+                               withMethod:@selector(SPmessagesWereSelected:fromTableViewManager:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(copyMessagesToMailbox:)
+                               withMethod:@selector(SPcopyMessagesToMailbox:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(moveMessagesToMailbox:)
+                               withMethod:@selector(SPmoveMessagesToMailbox:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(_moveOrCopyMessagesToMailbox:deleteOriginals:)
+                               withMethod:@selector(SP_moveOrCopyMessagesToMailbox:deleteOriginals:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(_displaySelectedMessageInSeparateWindow:withModifiers:)
+                               withMethod:@selector(SP_displaySelectedMessageInSeparateWindow:withModifiers:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(forwardWithParentAsAttachment:)
+                               withMethod:@selector(SPforwardWithParentAsAttachment:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(forwardAsAttachment:)
+                               withMethod:@selector(SPforwardAsAttachment:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(forwardMessage:)
+                               withMethod:@selector(SPforwardMessage:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(redirectMessage:)
+                               withMethod:@selector(SPredirectMessage:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(selectAllMessages)
+                               withMethod:@selector(SPselectAllMessages) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(_openMessages:withModifiers:)
+                               withMethod:@selector(SP_openMessages:withModifiers:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(openMessages:)
+                               withMethod:@selector(SPopenMessages:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(archiveMessages:)
+                               withMethod:@selector(SParchiveMessages:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(deleteMessages:allowingMoveToTrash:)
+                               withMethod:@selector(SPdeleteMessages:allowingMoveToTrash:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(deleteMessages:)
+                               withMethod:@selector(SPdeleteMessages:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(undeleteMessages:)
+                               withMethod:@selector(SPundeleteMessages:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(replyToOriginalSender:)
+                               withMethod:@selector(SPreplyToOriginalSender:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(replyAllMessage:)
+                               withMethod:@selector(SPreplyAllMessage:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(replyMessage:)
+                               withMethod:@selector(SPreplyMessage:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(keyUp:)
+                               withMethod:@selector(SPkeyUp:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(keyDown:)
+                               withMethod:@selector(SPkeyDown:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(selectMailbox:)
+                               withMethod:@selector(SPselectMailbox:) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(messageSelection)
+                               withMethod:@selector(SPmessageSelection) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(selectedMessages)
+                               withMethod:@selector(SPselectedMessages) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(junkMailbox)
+                               withMethod:@selector(SPjunkMailbox) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(trashMailbox)
+                               withMethod:@selector(SPtrashMailbox) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(sentMailbox)
+                               withMethod:@selector(SPsentMailbox) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(draftsMailbox)
+                               withMethod:@selector(SPdraftsMailbox) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(outbox)
+                               withMethod:@selector(SPoutbox) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(inbox)
+                               withMethod:@selector(SPinbox) error:&error];
+        
+        [messageViewer jrlp_swizzleMethod:@selector(submenuAction:)
+                               withMethod:@selector(SPsubmenuAction:) error:&error];
+        
+    }
+    
+    Class messageViewController = NSClassFromString(@"MessageViewController");
+    if (messageViewController) {
+        [messageViewController jrlp_addMethodsFromClass:NSClassFromString(@"SPMessageViewController") error:&error];
+        
+        [messageViewController jrlp_swizzleClassMethod:@selector(keyPathsForValuesAffectingAlwaysShowMailboxName)
+                               withClassMethod:@selector(SPkeyPathsForValuesAffectingAlwaysShowMailboxName) error:&error];
+        
+        [messageViewController jrlp_swizzleClassMethod:@selector(keyPathsForValuesAffectingLoaded)
+                                       withClassMethod:@selector(SPkeyPathsForValuesAffectingLoaded) error:&error];
+
+        [messageViewController jrlp_swizzleClassMethod:@selector(keyPathsForValuesAffectingPageZoom)
+                                       withClassMethod:@selector(SPkeyPathsForValuesAffectingPageZoom) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(validateMenuItem:)
+                                       withMethod:@selector(SPvalidateMenuItem:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(validateToolbarItem:)
+                                       withMethod:@selector(SPvalidateToolbarItem:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(observeValueForKeyPath:ofObject:change:context:)
+                                       withMethod:@selector(SPobserveValueForKeyPath:ofObject:change:context:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(menuNeedsUpdate:)
+                                       withMethod:@selector(SPmenuNeedsUpdate:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(exportAttachments:)
+                                       withMethod:@selector(SPexportAttachments:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(quickLookAllAttachments:)
+                                       withMethod:@selector(SPquickLookAllAttachments:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(saveAllAttachmentsWithoutPrompting:)
+                                       withMethod:@selector(SPsaveAllAttachmentsWithoutPrompting:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(saveAllAttachments:)
+                                       withMethod:@selector(SPsaveAllAttachments:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(saveAttachment:)
+                                       withMethod:@selector(SPsaveAttachment:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(viewSource:)
+                                       withMethod:@selector(SPviewSource:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(showMessageInMailbox:)
+                                       withMethod:@selector(SPshowMessageInMailbox:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(toggleAllHeaders:)
+                                       withMethod:@selector(SPtoggleAllHeaders:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(forward:)
+                                       withMethod:@selector(SPforward:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(replyAll:)
+                                       withMethod:@selector(SPreplyAll:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(reply:)
+                                       withMethod:@selector(SPreply:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(delete:)
+                                       withMethod:@selector(SPdelete:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(_messageViewer)
+                                       withMethod:@selector(SP_messageViewer) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(mouseExited:)
+                                       withMethod:@selector(SPmouseExited:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(mouseEntered:)
+                                       withMethod:@selector(SPmouseEntered:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(_updateHeaderMouseOver)
+                                       withMethod:@selector(SP_updateHeaderMouseOver) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(_updateAttachmentRollover)
+                                       withMethod:@selector(SP_updateAttachmentRollover) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(_updateRolloverTrackingArea:)
+                                       withMethod:@selector(SP_updateRolloverTrackingArea:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(_showLoadingProgress)
+                                       withMethod:@selector(SP_showLoadingProgress) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(_updateWebDocumentView:)
+                                       withMethod:@selector(SP_updateWebDocumentView:) error:&error];
+        
+        [messageViewController jrlp_swizzleMethod:@selector(cursorUpdate:)
+                                       withMethod:@selector(SPcursorUpdate:) error:&error];
+
+
+
+    }
+    
 }
 
 @end

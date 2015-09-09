@@ -57,6 +57,8 @@
 		DD1D703D1B9A2AEF00CB8452 /* SPLazySubmenuMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D702C1B9A2AEF00CB8452 /* SPLazySubmenuMenuItem.m */; };
 		DD1D703E1B9A2AEF00CB8452 /* SPMailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D702E1B9A2AEF00CB8452 /* SPMailTableView.m */; };
 		DD1D703F1B9A2AEF00CB8452 /* SPSortByMenuDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D70301B9A2AEF00CB8452 /* SPSortByMenuDelegate.m */; };
+		DD73592C1BA0390D00309A27 /* SPMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD73592B1BA0390D00309A27 /* SPMessageViewController.m */; };
+		DD8CBE9A1B9D81FF00BB7375 /* SPMessageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8CBE991B9D81FF00BB7375 /* SPMessageViewer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,6 +186,10 @@
 		DD1D702E1B9A2AEF00CB8452 /* SPMailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMailTableView.m; sourceTree = "<group>"; };
 		DD1D702F1B9A2AEF00CB8452 /* SPSortByMenuDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSortByMenuDelegate.h; sourceTree = "<group>"; };
 		DD1D70301B9A2AEF00CB8452 /* SPSortByMenuDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSortByMenuDelegate.m; sourceTree = "<group>"; };
+		DD73592A1BA0390D00309A27 /* SPMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMessageViewController.h; sourceTree = "<group>"; };
+		DD73592B1BA0390D00309A27 /* SPMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMessageViewController.m; sourceTree = "<group>"; };
+		DD8CBE981B9D81FF00BB7375 /* SPMessageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMessageViewer.h; sourceTree = "<group>"; };
+		DD8CBE991B9D81FF00BB7375 /* SPMessageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMessageViewer.m; sourceTree = "<group>"; };
 		DD8D75FA1B8B59AD00639FCE /* _AccountDisplayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AccountDisplayCell.h; sourceTree = "<group>"; };
 		DD8D75FB1B8B59AD00639FCE /* _AllSignaturesAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AllSignaturesAccount.h; sourceTree = "<group>"; };
 		DD8D75FC1B8B59AD00639FCE /* _AttachmentQueueEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AttachmentQueueEntry.h; sourceTree = "<group>"; };
@@ -918,6 +924,8 @@
 		DD1CF6B51B8F4CF70047A78F /* SignalSpam */ = {
 			isa = PBXGroup;
 			children = (
+				DD1CF6BD1B8F596E0047A78F /* SPAccountCell.h */,
+				DD1CF6BE1B8F596E0047A78F /* SPAccountCell.m */,
 				DD1D70131B9A2AEF00CB8452 /* SPFlagsMenuItemView.m */,
 				DD1D70141B9A2AEF00CB8452 /* SPTableViewManager.h */,
 				DD1D70151B9A2AEF00CB8452 /* SPTableViewManager.m */,
@@ -948,8 +956,10 @@
 				DD1D702E1B9A2AEF00CB8452 /* SPMailTableView.m */,
 				DD1D702F1B9A2AEF00CB8452 /* SPSortByMenuDelegate.h */,
 				DD1D70301B9A2AEF00CB8452 /* SPSortByMenuDelegate.m */,
-				DD1CF6BD1B8F596E0047A78F /* SPAccountCell.h */,
-				DD1CF6BE1B8F596E0047A78F /* SPAccountCell.m */,
+				DD8CBE981B9D81FF00BB7375 /* SPMessageViewer.h */,
+				DD8CBE991B9D81FF00BB7375 /* SPMessageViewer.m */,
+				DD73592A1BA0390D00309A27 /* SPMessageViewController.h */,
+				DD73592B1BA0390D00309A27 /* SPMessageViewController.m */,
 			);
 			path = SignalSpam;
 			sourceTree = "<group>";
@@ -1629,8 +1639,10 @@
 				DD1D70341B9A2AEF00CB8452 /* SPBindingsEnabledMenu.m in Sources */,
 				DD1CF6BF1B8F596E0047A78F /* SPAccountCell.m in Sources */,
 				DD1D703C1B9A2AEF00CB8452 /* SPLazyMenuSegmentedCell.m in Sources */,
+				DD73592C1BA0390D00309A27 /* SPMessageViewController.m in Sources */,
 				135829F717FD5C0600FC5C1F /* NSMutableAttributedString+MailHeader.m in Sources */,
 				DD1D703D1B9A2AEF00CB8452 /* SPLazySubmenuMenuItem.m in Sources */,
+				DD8CBE9A1B9D81FF00BB7375 /* SPMessageViewer.m in Sources */,
 				13E929FB1800CB1100AAE5CE /* MailHeader.m in Sources */,
 				DD1D70391B9A2AEF00CB8452 /* SPFavoritesMenuItemImageView.m in Sources */,
 				DD1D70371B9A2AEF00CB8452 /* SPFavoritesMenuDelegateProtocol-Protocol.m in Sources */,
