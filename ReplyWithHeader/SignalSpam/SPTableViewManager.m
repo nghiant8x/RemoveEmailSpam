@@ -11,13 +11,13 @@
 @implementation SPTableViewManager
 
 + (id)SP_getThreadBackgroundColorForThread:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SP_getThreadBackgroundColorForThread:arg1];
     return result;
 }
 
 + (id)SP_getDarkerThreadBackgroundColorForThread:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SP_getDarkerThreadBackgroundColorForThread:arg1];
     return result;
 }
@@ -45,7 +45,7 @@
     [self SPshowDeletions];
 }
 - (id)SPmessageToSelectIfEntireSelectionRemoved:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SPmessageToSelectIfEntireSelectionRemoved:arg1];
     return result;
 }
@@ -77,7 +77,7 @@
 
 }
 - (BOOL)SPshouldTrackMouse:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     BOOL result = [self SPshouldTrackMouse:arg1];
     return result;
     
@@ -146,7 +146,7 @@
  
 }
 - (id)SP_filterAndExpandMessagesForTransfer:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SP_filterAndExpandMessagesForTransfer:arg1];
     return result;
 
@@ -161,7 +161,7 @@
 
 }
 - (BOOL)SPshouldDeleteMessagesGivenCurrentState:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     BOOL result = [self SPshouldDeleteMessagesGivenCurrentState:arg1];
     return result;
 }
@@ -210,7 +210,7 @@
     return result;
 }
 - (id)SPparentThreadForChildMessage:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SPparentThreadForChildMessage:arg1];
     return result;
 }
@@ -220,7 +220,7 @@
     return result;
 }
 - (void)SPselectMessages:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPselectMessages:arg1];
 }
 - (void)SP_selectMessages:(id)arg1 scrollIfNeeded:(BOOL)arg2{
@@ -258,16 +258,16 @@
     return result;
 }
 - (void)SP_snippetsUpdated:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_snippetsUpdated:arg1];
 }
 - (id)SP_localizeSnippet:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SP_localizeSnippet:arg1];
     return result;
 }
 - (void)SP_updateRowsWithNewSnippets:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_updateRowsWithNewSnippets:arg1];
 }
 - (void)SP_updateSnippetsForMessage:(id)arg1 ignoreExpected:(BOOL)arg2{
@@ -275,11 +275,11 @@
     [self SP_updateSnippetsForMessage:arg1 ignoreExpected:arg2];
 }
 - (void)SPclearSnippetCacheForMessages:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPclearSnippetCacheForMessages:arg1];
 }
 - (void)SPmallPrefetchedSnippets:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPmallPrefetchedSnippets:arg1];
 }
 - (void)SPresetSnippetCache{
@@ -305,17 +305,17 @@
     return result;
 }
 - (id)SP_snippetForMessage:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SP_snippetForMessage:arg1];
     return result;
 }
 - (void)SP_doubleClickedMessage:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_doubleClickedMessage:arg1];
 
 }
 - (id)SPmailTableViewTopLineColor:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SPmailTableViewTopLineColor:arg1];
     return result;
 }
@@ -336,7 +336,7 @@
     return result;
 }
 - (void)SP_resetObjectValueForCellView:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_resetObjectValueForCellView:arg1];
 }
 - (BOOL)SP_shouldShowMailboxNames{
@@ -387,26 +387,26 @@
 
 }
 - (void)SPtableViewColumnDidResize:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPtableViewColumnDidResize:arg1];
 
 }
 - (void)SPtableViewColumnDidMove:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPtableViewColumnDidMove:arg1];
 
 }
 - (void)SPmailTableViewDidEndLiveResize:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPmailTableViewDidEndLiveResize:arg1];
 }
 - (void)SPmailTableViewWillStartLiveResize:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPmailTableViewWillStartLiveResize:arg1];
 
 }
 - (void)SPtableViewFrameChangedDuringLiveResize:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPtableViewFrameChangedDuringLiveResize:arg1];
 
 }
@@ -462,7 +462,7 @@
     return result;
 }
 - (long long)SPnumberOfRowsInTableView:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     long result = [self SPnumberOfRowsInTableView:arg1];
     return result;
 
@@ -474,17 +474,17 @@
 
 }
 - (void)SP_datesNeedRedisplay:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_datesNeedRedisplay:arg1];
 
 }
 - (void)SPmailTableViewDidResignFirstResponder:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPmailTableViewDidResignFirstResponder:arg1];
 
 }
 - (void)SPmailTableViewDidBecomeFirstResponder:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPmailTableViewDidBecomeFirstResponder:arg1];
 
 }
@@ -494,12 +494,12 @@
 
 }
 - (void)SPtableViewSelectionDidChange:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPtableViewSelectionDidChange:arg1];
 
 }
 - (id)SP_normalizedSelection:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SP_normalizedSelection:arg1];
     return result;
 
@@ -547,7 +547,7 @@
 
 }
 - (void)SPaddMouseTrackersObject:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPaddMouseTrackersObject:arg1];
 
 }
@@ -574,7 +574,7 @@
 
 }
 - (void)SPaddRawSelectionObject:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPaddRawSelectionObject:arg1];
 
 }
@@ -609,7 +609,7 @@
 
 }
 - (BOOL)SP_isMessageInSelectedThread:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     BOOL result = [self SP_isMessageInSelectedThread:arg1];
     return result;
 
@@ -752,11 +752,11 @@
     [self SPtoggleThread:arg1 ignoreModifierKeys:arg2];
 }
 - (void)SPtoggleThread:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPtoggleThread:arg1];
 }
 - (void)SPunhideMessages:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPunhideMessages:arg1];
 }
 - (BOOL)SPhideMessages:(id)arg1 selectingNextMessage:(BOOL)arg2{
@@ -773,16 +773,16 @@
     [self SPopenAllThreads];
 }
 - (void)SPcloseThread:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPcloseThread:arg1];
 }
 - (void)SPopenThread:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPopenThread:arg1];
 
 }
 - (void)SPinvalidateSelectionCache:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPinvalidateSelectionCache:arg1];
 }
 - (void)SPtoggleThreadedMode{
@@ -813,7 +813,7 @@
     [self SPselectAllMessagesAndMakeFirstResponder];
 }
 - (long long)SPtableViewNumberOfColumnsToPinToLefthandSide:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     long result = [self SPtableViewNumberOfColumnsToPinToLefthandSide:arg1];
     return result;
 }
@@ -891,27 +891,27 @@
 
 }
 - (void)SP_threadColorPreferenceChanged:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_threadColorPreferenceChanged:arg1];
 
 }
 - (void)SP_snippetLinePreferenceChanged:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_snippetLinePreferenceChanged:arg1];
 
 }
 - (void)SP_toCcPreferenceChanged:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_toCcPreferenceChanged:arg1];
 
 }
 - (void)SP_viewerLayoutPreferenceChanged:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_viewerLayoutPreferenceChanged:arg1];
 
 }
 - (void)SP_viewerPreferencesChanged:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_viewerPreferencesChanged:arg1];
 
 }
@@ -927,42 +927,42 @@
 
 }
 - (void)SPreadStoreSpecificAttributesFromDictionary:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPreadStoreSpecificAttributesFromDictionary:arg1];
 
 }
 - (void)SPreadStoreSpecificAttributesFromMailbox:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPreadStoreSpecificAttributesFromMailbox:arg1];
 
 }
 - (void)SPwriteStoreSpecificAttributesToMailbox:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPwriteStoreSpecificAttributesToMailbox:arg1];
 
 }
 - (void)SPwriteAttributesToDictionary:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPwriteAttributesToDictionary:arg1];
 
 }
 - (void)SPreadAttributesFromDictionary:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPreadAttributesFromDictionary:arg1];
 
 }
 - (void)SPsetupColumnManagerFromDictionary:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPsetupColumnManagerFromDictionary:arg1];
 
 }
 - (void)SP_mallConversationsUpdated:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_mallConversationsUpdated:arg1];
 
 }
 - (void)SP_messageMarkedForOverwrite:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_messageMarkedForOverwrite:arg1];
 
 }
@@ -973,7 +973,7 @@
 }
 
 - (void)SP_configureTableViewLayoutWithTableColumnResizingMasks:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_configureTableViewLayoutWithTableColumnResizingMasks:arg1];
 
 }
@@ -988,11 +988,11 @@
 
 }
 - (void)SPshowFollowupsToMessage:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPshowFollowupsToMessage:arg1];
 }
 - (void)SPrichUnreadButtonClicked:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPrichUnreadButtonClicked:arg1];
 
 }
@@ -1017,7 +1017,7 @@
 
 }
 - (void)SP_configureColumnForEndTruncation:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_configureColumnForEndTruncation:arg1];
 
 }
@@ -1032,12 +1032,12 @@
 
 }
 - (void)SPuserDidScrollInTableView:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPuserDidScrollInTableView:arg1];
 
 }
 - (void)SP_tableViewScrolled:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_tableViewScrolled:arg1];
 
 }
@@ -1048,7 +1048,7 @@
 
 }
 - (id)SPtableViewGetDefaultMenu:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SPtableViewGetDefaultMenu:arg1];
     return result;
 
@@ -1079,7 +1079,7 @@
 
 }
 - (void)SPsetAppleScriptVisibleColumns:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPsetAppleScriptVisibleColumns:arg1];
 
 }
@@ -1100,7 +1100,7 @@
 
 }
 - (void)SPmailTableViewDidMoveToWindow:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPmailTableViewDidMoveToWindow:arg1];
 
 }
@@ -1119,7 +1119,7 @@
     return result;
 }
 - (unsigned long long)SP_indexOfMemberToSelectWhenOpeningThread:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     long result = [self SP_indexOfMemberToSelectWhenOpeningThread:arg1];
     return result;
 }
@@ -1202,7 +1202,7 @@
 
 }
 - (void)SPmessagesRemovedFromMall:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPmessagesRemovedFromMall:arg1];
 
 }
@@ -1212,7 +1212,7 @@
 
 }
 - (void)SPmallFinishedLoading:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPmallFinishedLoading:arg1];
 
 }
@@ -1222,22 +1222,22 @@
 
 }
 - (void)SPmallStructureChanged:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPmallStructureChanged:arg1];
 
 }
 - (void)SPmallStructureWillChange:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPmallStructureWillChange:arg1];
 
 }
 - (void)SPmallSortChanged:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPmallSortChanged:arg1];
 
 }
 - (void)SPreloadMailboxes:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPreloadMailboxes:arg1];
 
 }
@@ -1247,7 +1247,7 @@
 
 }
 - (void)SP_restoreScrollState:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_restoreScrollState:arg1];
 
 }
