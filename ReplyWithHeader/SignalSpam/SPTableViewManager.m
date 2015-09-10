@@ -71,7 +71,7 @@
 
 }
 - (id)SPmailTableView:(id)arg1 rangesForBackgroundShadingInRange:(struct _NSRange)arg2 shadingColors:(id *)arg3 leftColumnColors:(id *)arg4{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SPmailTableView:arg1 rangesForBackgroundShadingInRange:arg2 shadingColors:arg3 leftColumnColors:arg4];
     return result;
 
@@ -83,7 +83,7 @@
     
 }
 - (void)SPmailTableView:(id)arg1 gotEvent:(id)arg2{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPmailTableView:arg1 gotEvent:arg2];
 
 }
@@ -118,7 +118,7 @@
 
 }
 - (BOOL)SPtableView:(id)arg1 writeRowsWithIndexes:(id)arg2 toPasteboard:(id)arg3{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     BOOL result = [self SPtableView:arg1 writeRowsWithIndexes:arg2 toPasteboard:arg3];
     return result;
 
@@ -170,7 +170,7 @@
     [self SPundeleteMessagesAllowingUndo:arg1];
 }
 - (void)SPdeleteMessages:(id)arg1 allowMoveToTrash:(BOOL)arg2 allowUndo:(BOOL)arg3{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPdeleteMessages:arg1 allowMoveToTrash:arg2 allowUndo:arg3];
 }
 - (void)SP_redeleteMessages:(id)arg1 messagesToSelect:(id)arg2{
@@ -262,11 +262,13 @@
     [self SP_snippetsUpdated:arg1];
 }
 - (id)SP_localizeSnippet:(id)arg1{
+    //Tommy: Mail list
     MLogString(@"%@",arg1);
     id result = [self SP_localizeSnippet:arg1];
     return result;
 }
 - (void)SP_updateRowsWithNewSnippets:(id)arg1{
+    //Tommy: Mail list
     MLogString(@"%@",arg1);
     [self SP_updateRowsWithNewSnippets:arg1];
 }
@@ -326,12 +328,12 @@
 
 }
 - (void)SPtableView:(id)arg1 willDisplayCell:(id)arg2 forTableColumn:(id)arg3 row:(long long)arg4{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPtableView:arg1 willDisplayCell:arg2 forTableColumn:arg3 row:arg4];
 
 }
 - (id)SPtableView:(id)arg1 dataCellForTableColumn:(id)arg2 row:(long long)arg3{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SPtableView:arg1 dataCellForTableColumn:arg2 row:arg3];
     return result;
 }
@@ -373,7 +375,7 @@
 
 }
 - (void)SPtableView:(id)arg1 didAddRowView:(id)arg2 forRow:(long long)arg3{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPtableView:arg1 didAddRowView:arg2 forRow:arg3];
 
 }
@@ -449,7 +451,6 @@
     MLogString(@"");
     id result = [self SP_colorForMessage:arg1 inRow:arg2 withCell:arg3];
     return result;
-
 }
 - (id)SP_messageSelectionColor{
     MLogString(@"");

@@ -29,7 +29,7 @@
 }
 
 - (void)SPDidScrollInScrollView:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPDidScrollInScrollView:arg1];
 }
 
@@ -79,7 +79,7 @@
 }
 
 - (void)SPViewWillMoveToSuperview:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPViewWillMoveToSuperview:arg1];
 }
 
@@ -89,17 +89,17 @@
 }
 
 - (void)SPViewWillMoveToWindow:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPViewWillMoveToWindow:arg1];
 }
 
 - (void)SP_postEventNotification:(id)arg1 fromCell:(id)arg2{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SP_postEventNotification:arg1 fromCell:arg2];
 }
 
 - (void)SPMouseUp:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPMouseUp:arg1];
 }
 
@@ -156,38 +156,38 @@
 }
 
 - (void)SPDraggingSession:(id)arg1 movedToPoint:(struct CGPoint)arg2{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPDraggingSession:arg1 movedToPoint:arg2];
 }
 
 - (void)SPDraggingSession:(id)arg1 endedAtPoint:(struct CGPoint)arg2 operation:(unsigned long long)arg3{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPDraggingSession:arg1 endedAtPoint:arg2 operation:arg3];
 }
 
 - (id)SPDragImageForRowsWithIndexes:(id)arg1 tableColumns:(id)arg2 event:(id)arg3 offset:(struct CGPoint *)arg4{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SPDragImageForRowsWithIndexes:arg1 tableColumns:arg2 event:arg3 offset:arg4];
     return result;
 }
 
 - (void)SPAddTableColumn:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPAddTableColumn:arg1];
 }
 
 - (void)SPRemoveTableColumn:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPRemoveTableColumn:arg1];
 }
 
 - (void)SPMoveColumn:(long long)arg1 toColumn:(long long)arg2{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPMoveColumn:arg1 toColumn:arg2];
 }
 
 - (void)SPSetTableColumn:(id)arg1 toVisible:(BOOL)arg2 atPosition:(long long)arg3{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPSetTableColumn:arg1 toVisible:arg2 atPosition:arg3];
 }
 
@@ -197,7 +197,7 @@
 }
 
 - (void)SPShowTableColumnsFromArray:(id)arg1 allColumns:(id)arg2{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPShowTableColumnsFromArray:arg1 allColumns:arg2];
 }
 
@@ -213,17 +213,17 @@
 }
 
 - (void)SPSetDelegate:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPSetDelegate:arg1];
 }
 
 - (void)SPKeyDown:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPKeyDown:arg1];
 }
 
 - (void)SPInsertText:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     [self SPInsertText:arg1];
 }
 
@@ -233,7 +233,7 @@
 }
 
 - (BOOL)SPRespondsToSelector:(SEL)arg1{
-//    MLogString(@"");
+//    MLogString(@"%@",arg1);
     BOOL result = [self SPRespondsToSelector:arg1];
     return result;
 }
@@ -250,7 +250,7 @@
 }
 
 - (id)SPInitWithCoder:(id)arg1{
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SPInitWithCoder:arg1];
     return result;
 }
@@ -268,7 +268,7 @@
 
 - (id)SPMenuForEvent:(id)arg1{
     //Tommy Right Click
-    MLogString(@"");
+    MLogString(@"%@",arg1);
     id result = [self SPMenuForEvent:arg1];
     return result;
 }

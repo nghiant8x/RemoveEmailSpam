@@ -926,6 +926,7 @@
 			children = (
 				DD1CF6BD1B8F596E0047A78F /* SPAccountCell.h */,
 				DD1CF6BE1B8F596E0047A78F /* SPAccountCell.m */,
+				DD1D70261B9A2AEF00CB8452 /* SPFlagsMenuItemView.h */,
 				DD1D70131B9A2AEF00CB8452 /* SPFlagsMenuItemView.m */,
 				DD1D70141B9A2AEF00CB8452 /* SPTableViewManager.h */,
 				DD1D70151B9A2AEF00CB8452 /* SPTableViewManager.m */,
@@ -945,7 +946,6 @@
 				DD1D70231B9A2AEF00CB8452 /* SPFavoritesMenuItemImageView.m */,
 				DD1D70241B9A2AEF00CB8452 /* SPFavoritesMenuOutlineView.h */,
 				DD1D70251B9A2AEF00CB8452 /* SPFavoritesMenuOutlineView.m */,
-				DD1D70261B9A2AEF00CB8452 /* SPFlagsMenuItemView.h */,
 				DD1D70271B9A2AEF00CB8452 /* SPFlatTableView.h */,
 				DD1D70281B9A2AEF00CB8452 /* SPFlatTableView.m */,
 				DD1D70291B9A2AEF00CB8452 /* SPLazyMenuSegmentedCell.h */,
