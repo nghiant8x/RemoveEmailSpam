@@ -59,6 +59,8 @@
 		DD1D703F1B9A2AEF00CB8452 /* SPSortByMenuDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D70301B9A2AEF00CB8452 /* SPSortByMenuDelegate.m */; };
 		DD73592C1BA0390D00309A27 /* SPMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD73592B1BA0390D00309A27 /* SPMessageViewController.m */; };
 		DD8CBE9A1B9D81FF00BB7375 /* SPMessageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8CBE991B9D81FF00BB7375 /* SPMessageViewer.m */; };
+		DDBB46871BA2E0DF00BC8442 /* SPMessageViewerLazyPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB46861BA2E0DF00BC8442 /* SPMessageViewerLazyPopUpButton.m */; };
+		DDBB468D1BA2E4C400BC8442 /* SPsingleMessageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB468C1BA2E4C400BC8442 /* SPsingleMessageViewer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -730,6 +732,10 @@
 		DD8D78141B8B59AE00639FCE /* WebViewEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewEditor.h; sourceTree = "<group>"; };
 		DD8D78151B8B59AE00639FCE /* WebViewLoadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewLoadOperation.h; sourceTree = "<group>"; };
 		DD8D78161B8B59AE00639FCE /* WindowTransformAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowTransformAnimation.h; sourceTree = "<group>"; };
+		DDBB46851BA2E0DF00BC8442 /* SPMessageViewerLazyPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMessageViewerLazyPopUpButton.h; sourceTree = "<group>"; };
+		DDBB46861BA2E0DF00BC8442 /* SPMessageViewerLazyPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMessageViewerLazyPopUpButton.m; sourceTree = "<group>"; };
+		DDBB468B1BA2E4C400BC8442 /* SPsingleMessageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPsingleMessageViewer.h; sourceTree = "<group>"; };
+		DDBB468C1BA2E4C400BC8442 /* SPsingleMessageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPsingleMessageViewer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -960,6 +966,10 @@
 				DD8CBE991B9D81FF00BB7375 /* SPMessageViewer.m */,
 				DD73592A1BA0390D00309A27 /* SPMessageViewController.h */,
 				DD73592B1BA0390D00309A27 /* SPMessageViewController.m */,
+				DDBB46851BA2E0DF00BC8442 /* SPMessageViewerLazyPopUpButton.h */,
+				DDBB46861BA2E0DF00BC8442 /* SPMessageViewerLazyPopUpButton.m */,
+				DDBB468B1BA2E4C400BC8442 /* SPsingleMessageViewer.h */,
+				DDBB468C1BA2E4C400BC8442 /* SPsingleMessageViewer.m */,
 			);
 			path = SignalSpam;
 			sourceTree = "<group>";
@@ -1643,7 +1653,9 @@
 				135829F717FD5C0600FC5C1F /* NSMutableAttributedString+MailHeader.m in Sources */,
 				DD1D703D1B9A2AEF00CB8452 /* SPLazySubmenuMenuItem.m in Sources */,
 				DD8CBE9A1B9D81FF00BB7375 /* SPMessageViewer.m in Sources */,
+				DDBB46871BA2E0DF00BC8442 /* SPMessageViewerLazyPopUpButton.m in Sources */,
 				13E929FB1800CB1100AAE5CE /* MailHeader.m in Sources */,
+				DDBB468D1BA2E4C400BC8442 /* SPsingleMessageViewer.m in Sources */,
 				DD1D70391B9A2AEF00CB8452 /* SPFavoritesMenuItemImageView.m in Sources */,
 				DD1D70371B9A2AEF00CB8452 /* SPFavoritesMenuDelegateProtocol-Protocol.m in Sources */,
 				13AD485D1801561500473407 /* JRLPSwizzle.m in Sources */,

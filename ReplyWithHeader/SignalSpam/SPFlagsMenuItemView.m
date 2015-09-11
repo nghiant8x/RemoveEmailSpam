@@ -11,7 +11,6 @@
 @implementation SPFlagsMenuItemView
 
 - (void)SPSetEnabled:(BOOL)arg1{
-    //Tommy: Right Click
     MLogString(@"");
     [self SPSetEnabled:arg1];
 

@@ -64,5 +64,7 @@
 - (id)SPinbox;
 - (void)SPsubmenuAction:(id)arg1;
 
+- (void)SPsetSelectedMessages:(id)arg1;
+
 
 @end

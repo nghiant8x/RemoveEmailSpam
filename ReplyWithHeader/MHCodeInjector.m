@@ -1512,6 +1512,9 @@ NSString *MailHeaderSwizzledMethodPrefix = @"MH";
         [messageViewer jrlp_swizzleMethod:@selector(submenuAction:)
                                withMethod:@selector(SPsubmenuAction:) error:&error];
         
+        [messageViewer jrlp_swizzleMethod:@selector(setSelectedMessages:)
+                               withMethod:@selector(SPsetSelectedMessages:) error:&error];
+        
     }
     
     Class messageViewController = NSClassFromString(@"MessageViewController");
@@ -1602,8 +1605,29 @@ NSString *MailHeaderSwizzledMethodPrefix = @"MH";
         [messageViewController jrlp_swizzleMethod:@selector(cursorUpdate:)
                                        withMethod:@selector(SPcursorUpdate:) error:&error];
 
-
-
+    }
+    
+    
+    Class messageViewerLazyPopUpButton = NSClassFromString(@"MessageViewerLazyPopUpButton");
+    if (messageViewerLazyPopUpButton) {
+        [messageViewerLazyPopUpButton jrlp_addMethodsFromClass:NSClassFromString(@"SPMessageViewerLazyPopUpButton") error:&error];
+        
+        [messageViewerLazyPopUpButton jrlp_swizzleMethod:@selector(initializeMenu)
+                                              withMethod:@selector(SPinitializeMenu) error:&error];
+        
+        [messageViewerLazyPopUpButton jrlp_swizzleMethod:@selector(setMenu:)
+                                              withMethod:@selector(SPsetMenu:) error:&error];
+        
+    }
+    
+    Class singleMessageViewer = NSClassFromString(@"SingleMessageViewer");
+    if (singleMessageViewer) {
+        [singleMessageViewer jrlp_addMethodsFromClass:NSClassFromString(@"SPsingleMessageViewer") error:&error];
+        
+        [singleMessageViewer jrlp_swizzleMethod:@selector(selectMessages:)
+                                     withMethod:@selector(SPselectMessages:) error:&error];
+        
+        
     }
     
 }

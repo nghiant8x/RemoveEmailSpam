@@ -154,6 +154,7 @@
 }
 
 - (void)SPmessagesWereSelected:(id)arg1 fromTableViewManager:(id)arg2{
+    //Tommy: Get ID and Subject when select a mail
     MLogString(@"%@",arg1);
 
     [self SPmessagesWereSelected:arg1 fromTableViewManager:arg2];
@@ -296,7 +297,6 @@
 }
 
 - (id)SPselectedMessages{
-    //Tommy Selected messages
     MLogString(@"");
 
     id result = [self SPselectedMessages];
@@ -349,6 +349,12 @@
     MLogString(@"%@",arg1);
 
     [self SPsubmenuAction:arg1];
+}
+
+- (void)SPsetSelectedMessages:(id)arg1{
+    MLogString(@"%@",arg1);
+    [self SPsetSelectedMessages:arg1];
+
 }
 
 
